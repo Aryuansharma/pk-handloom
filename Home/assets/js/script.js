@@ -51,3 +51,32 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+
+const buttons = document.querySelectorAll(".filter-bar button");
+const items = document.querySelectorAll(".grid-item");
+
+buttons.forEach(btn => {
+
+btn.addEventListener("click", () => {
+
+const filter = btn.dataset.filter;
+
+items.forEach(item => {
+
+if(filter === "all"){
+item.style.display="block";
+}
+
+else if(item.classList.contains(filter)){
+item.style.display="block";
+}
+
+else{
+item.style.display="none";
+}
+
+});
+
+});
+
+});
