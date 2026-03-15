@@ -12,6 +12,16 @@ document.addEventListener("DOMContentLoaded", function() {
     observer.observe(el);
   });
 
+  // Parallax effect for gallery hero
+  const parallaxBg = document.querySelector('.hero-background img');
+  if (parallaxBg) {
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      const rate = scrolled * -0.5;
+      parallaxBg.style.transform = `translateY(${rate}px)`;
+    });
+  }
+
   // Initialize Swiper for New Arrivals
   if (window.Swiper) {
     const swiper = new Swiper(".arrivalsSwiper", {
