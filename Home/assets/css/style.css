@@ -145,7 +145,8 @@ color:#333;
 .section-title{
 text-align:center;
 font-size:32px;
-margin:80px 0 40px;
+/* Keep shared section headings compact so sections sit about 20px apart. */
+margin:0 0 20px;
 font-weight:600;
 }
 
@@ -303,7 +304,8 @@ margin-bottom:15px;
 display:flex;
 align-items:center;
 gap:40px;
-margin:80px auto;
+/* Avoid stacking extra vertical space inside the gallery CTA block. */
+margin:0 auto;
 }
 
 .gallery-image img{
@@ -386,7 +388,8 @@ resize:none;
 background:#111;
 color:#fff;
 padding:60px 0;
-margin-top:80px;
+/* Match the tighter rhythm before the footer. */
+margin-top:20px;
 }
 
 .footer-grid{
@@ -743,7 +746,8 @@ html {
 
 /* Masonry Gallery */
 .masonry-gallery {
-  padding: 80px 0;
+  /* Bring gallery spacing in line with the 20px section rhythm. */
+  padding: 20px 0;
   background: #f8f9fa;
 }
 
@@ -867,16 +871,16 @@ html {
 
 /*about us page*/
 
-/* PARALLAX SECTION BASE */
+/* SECTION SPACING BASE */
 
 section{
 position:relative;
-padding:120px 0;
 background:#fff;
 }
 
 section + section{
-margin-top:-120px;
+/* Use a consistent 20px gap between sections site-wide. */
+margin-top:20px;
 }
 
 /* HERO */
@@ -1040,7 +1044,8 @@ color:#ff6b3d; /* same accent color */
 display:flex;
 justify-content:center;
 gap:60px;
-padding:80px 10%;
+/* Reduce section spacing without changing the contact cards' inner layout. */
+padding:20px 10%;
 text-align:center;
 background:#f7f7f7;
 }
@@ -1132,7 +1137,8 @@ text-align:center;
 /* COLLECTION LAYOUT */
 
 .collections-section{
-padding:80px 10%;
+/* Keep collections content aligned with the smaller section spacing. */
+padding:20px 10%;
 }
 
 .collections-wrapper{
