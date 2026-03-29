@@ -1035,7 +1035,7 @@ max-width:600px;
 }
 
 .contact-hero-text h1{
-color:#ff6b3d; /* same accent color */
+color:white; /* same accent color */
 }
 
 /* CONTACT INFO */
@@ -1052,8 +1052,8 @@ background:#f7f7f7;
 
 .contact-box i{
 font-size:28px;
-color:#ff6b3d;
-margin-bottom:15px;
+color:#b68d40;
+margin-bottom:0px;
 }
 
 /* MAP */
@@ -1067,14 +1067,16 @@ border:0;
 /* SOCIAL */
 
 .contact-social{
-background:#0a1d33;
+background: white;
 display:flex;
 justify-content:center;
 gap:20px;
-padding:25px;
+padding:0px;
+margin-top: 0px;
 }
 
 .contact-social a{
+
 color:white;
 width:40px;
 height:40px;
@@ -1082,12 +1084,12 @@ display:flex;
 align-items:center;
 justify-content:center;
 border-radius:50%;
-background:#1d3557;
+background: linear-gradient(135deg, #101010 0%, #1a1a1a 100%);
 transition:.3s;
 }
 
 .contact-social a:hover{
-background:#ff6b3d;
+background: #b68d40;
 }
 
 /* collection page */
